@@ -1,15 +1,15 @@
 # Bybit Connector Updates for Hummingbot
 
-This repository contains updated and enhanced Bybit connector implementations for Hummingbot, including both spot and perpetual trading support.
+Independent improvements and fixes for the Hummingbot Bybit connector, addressing various issues and adding enhanced functionality for both spot and perpetual trading.
 
 ## Overview
 
-These updates improve the Bybit connector functionality in Hummingbot with:
-- Enhanced error handling and retry mechanisms
-- Improved rate limiting compliance
-- Better funding rate data collection
-- Fixed authentication issues
-- Support for both spot and perpetual markets
+I've been working with the Hummingbot Bybit connector and encountered several issues that needed fixing. This repository contains my solutions and improvements:
+- Fixed authentication problems with Bybit API v5
+- Resolved rate limiting issues that were causing disconnections
+- Improved WebSocket stability and reconnection logic
+- Added better error handling and recovery
+- Created tools for funding rate arbitrage analysis
 
 ## Features
 
@@ -131,23 +131,22 @@ python test_funding_arbitrage.py
 
 ## Contributing
 
-Contributions are welcome! Please ensure:
-1. All tests pass before submitting PR
-2. Code follows Hummingbot coding standards
-3. New features include appropriate tests
-4. Documentation is updated accordingly
+Feel free to submit issues or pull requests if you find bugs or have improvements. When contributing:
+1. Test your changes thoroughly
+2. Include clear descriptions of what was changed and why
+3. Update documentation if adding new features
 
 ## License
 
-This code is provided under the same license as Hummingbot. See the main Hummingbot repository for license details.
+This code is provided as-is for the Hummingbot community. Feel free to use and modify as needed.
 
 ## Support
 
-For issues and questions:
+If you encounter issues or have questions about these updates:
 - Open an issue in this repository
-- Join the Hummingbot Discord community
-- Check the Hummingbot documentation
+- Check the Hummingbot Discord for community support
+- Refer to Bybit's API documentation for endpoint-specific questions
 
-## Bounty Program
+## Disclaimer
 
-If you find these updates useful, consider supporting through the Hummingbot bounty program. These improvements help the entire community trade more effectively on Bybit.
+These are independent modifications not officially supported by Hummingbot or Bybit. Use at your own risk and always test thoroughly before using in production.
